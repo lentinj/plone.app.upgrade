@@ -18,3 +18,8 @@ class TestMigrations_v4_3aplha1(MigrationTest):
         self.assertEquals(
             pprop.site_properties.getProperty('displayPublicationDateInByline'),
             False)
+
+    def testAddDisplayPublicationDateInBylineProperty(self):
+        uf = self.portal.acl_users
+
+        self.assertNotEqual(uf.objectIds(['Default Plone Password Policy']),[])

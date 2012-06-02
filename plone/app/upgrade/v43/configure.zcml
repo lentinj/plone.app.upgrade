@@ -16,6 +16,14 @@
           handler=".alphas.to43alpha1"
           />
 
+      <genericsetup:upgradeStep
+          title="Install Default Password Policy Plugin"
+          description=""
+          handler=".alphas.to43alpha1_password_validation"
+          />
+
+
     </genericsetup:upgradeSteps>
+
 
 </configure>
